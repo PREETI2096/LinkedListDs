@@ -21,11 +21,23 @@ public class LinkedListMain {
 		list3.append(30);
 		list3.append(70);
 		list3.show();
-		
+
 		LinkedList<Integer> list4 = new LinkedList<>();
-		list4.insert(56 );
+		list4.insert(56);
 		list4.insert(40);
 		list4.insert(70);
 		list4.show();
+
+		LinkedList<Integer> list5 = new LinkedList<>();
+		System.out.println("Linked List:");
+		Integer pop = list4.pop(56);
+		if (pop == null)
+			System.out.println("Empty list");
+		else
+			System.out.println("Popped element => " + pop);
+		list4.show();
+
+		System.out.println();
+
 	}
 }
