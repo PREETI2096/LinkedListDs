@@ -38,6 +38,20 @@ public class LinkedList<T> {
 		}
 	}
 
+	public void insert(T data) {
+		Node<T> node = new Node(data);
+		if (head == null) {
+			head = node;
+			// tail = node;
+		} else {
+			Node<T> temp = head;
+			while (temp.getNext() != null) {
+				temp = temp.getNext();
+			}
+			temp.setNext(node);
+		}
+	}
+
 	public void show() {
 		if (head == null) {
 			System.out.println("Linked list is empty");
