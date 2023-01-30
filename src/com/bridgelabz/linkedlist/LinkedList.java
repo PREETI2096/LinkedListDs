@@ -52,6 +52,20 @@ public class LinkedList<T> {
 		}
 	}
 
+	public boolean isEmpty() {
+		return head == null ? true : false;
+	}
+
+	public T pop(int value) {
+		if (head == null)
+			return null;
+		else {
+			T data = head.getKey();
+			head = (Node<T>) head.getNext();
+			return data;
+		}
+	}
+
 	public void show() {
 		if (head == null) {
 			System.out.println("Linked list is empty");
