@@ -31,18 +31,22 @@ public class LinkedListMain {
 		System.out.println("Linked List:");
 		Integer pop = list4.pop(56);
 		if (pop == null)
-	        System.out.println("Empty list");
-	    else
-	        System.out.println("Popped element => " + pop);
-	    list4.show();
-	    System.out.println("Removed last element in Linked List:");
+			System.out.println("Empty list");
+		else
+			System.out.println("Popped element => " + pop);
+		list4.show();
+		System.out.println("Removed last element in Linked List:");
 		Integer popLast = list3.popLast();
 		if (popLast == null)
-	        System.out.println("Empty list");
-	    else
-	        System.out.println("Popped element => " + popLast);
-	    list3.show();
-
-	    System.out.println();
+			System.out.println("Empty list");
+		else
+			System.out.println("Popped element => " + popLast);
+		list3.show();
+		Node<Integer> search = list1.search(47);
+		if (search == null)
+			System.out.println("Element Not Found!");
+		else
+			System.out.println("Element Found");
+		list1.show();
 	}
 }
